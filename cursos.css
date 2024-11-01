@@ -88,6 +88,19 @@ footer {
     margin-top: 20px;
     text-align: center;
     padding: 1em 0;
-    background-color: #333;
+    background-color: #2a2525;
     color: white;
+}
+
+.carousel {
+    height: 300px; 
+}
+
+.carousel-item {
+    height: 100%; 
+}
+
+.carousel-item img {
+    height: 100%;
+    object-fit: cover; 
 }

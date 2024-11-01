@@ -4,33 +4,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todos os Cursos - Cursos Culinários</title>
+    <!-- Link CSS do Bootstrap 5 -->
+    <link href="../AC2/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="cursos.css">
 </head>
 <body>
 
     <!-- Cabeçalho e Navegação -->
-    <header>
+    <header class="bg-dark text-white text-center py-3">
         <h1>Ambiente de Cursos Culinários</h1>
     </header>
-    <nav>
-        <a href="home.html">Home</a>
-        <a href="todos-cursos.html">Todos os Cursos</a>
-        <a href="login.html">Sair</a>
+    <nav class="bg-secondary text-white text-center py-2">
+        <a href="home.html" class="text-white mx-3">Home</a>
+        <a href="todos-cursos.html" class="text-white mx-3">Todos os Cursos</a>
+        <a href="login.html" class="text-white mx-3">Sair</a>
     </nav>
 
     <!-- Conteúdo Principal -->
-    <div class="container courses-list">
-        <h2>Todos os Cursos</h2>
-        <div class="courses-buttons">
-            <button onclick="location.href='#curso1'">Curso de Culinária Básica</button>
-            <button onclick="location.href='#curso2'">Curso de Panificação</button>
-            <button onclick="location.href='#curso3'">Curso de Doces e Sobremesas</button>
+    <div class="container my-4">
+        <h2 class="text-center mb-4">Todos os Cursos</h2>
+
+        <div id="coursesCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+               
+                <div class="carousel-item active">
+                    <div class="d-flex justify-content-center">
+                        <div class="card" style="width: 18rem;">
+                            <img src="../AC2/img/culinaria-e-gastronomia-voce-sabe-a-diferenca-entre-as-duas.webp" class="card-img-top" alt="Imagem do curso de Culinária Básica">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Curso de Culinária Básica</h5>
+                                <p class="card-text">Aprenda as técnicas básicas da cozinha.</p>
+                                <a href="#" class="btn btn-primary">Ver Curso</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center">
+                        <div class="card" style="width: 18rem;">
+                            <img src="../AC2/img/emulsificantes-na-panificacao-1.jpg" class="card-img-top" alt="Imagem do curso de Panificação">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Curso de Panificação</h5>
+                                <p class="card-text">Domine o preparo de pães e massas.</p>
+                                <a href="#" class="btn btn-primary">Ver Curso</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+             
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center">
+                        <div class="card" style="width: 18rem;">
+                            <img src="../AC2/img/melhores-cursos-de-confeitaria-online-1.webp" class="card-img-top" alt="Imagem do curso de Doces e Sobremesas">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Curso de Doces e Sobremesas</h5>
+                                <p class="card-text">Delicie-se com as melhores receitas de sobremesas.</p>
+                                <a href="#" class="btn btn-primary">Ver Curso</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center">
+                        <div class="card" style="width: 18rem;">
+                            <img src="../AC2/img/conheca-os-beneficios-da-culinaria-japonesa.jpg" class="card-img-top" alt="Imagem do curso de Culinária Japonesa">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Curso de Culinária Japonesa</h5>
+                                <p class="card-text">Explore os sabores e técnicas da cozinha japonesa.</p>
+                                <a href="#" class="btn btn-primary">Ver Curso</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+               
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center">
+                        <div class="card" style="width: 18rem;">
+                            <img src="../AC2/img/onde-comprar-mini-salgados-para-casamento.jpg" class="card-img-top" alt="Imagem do curso de Salgados de Festa">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Curso de Salgados de Festa</h5>
+                                <p class="card-text">Aprenda a preparar salgados deliciosos para festas e eventos.</p>
+                                <a href="#" class="btn btn-primary">Ver Curso</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controles do Carousel -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#coursesCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#coursesCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
         </div>
     </div>
 
-    <footer>
-        <p>&copy; 2024 Ambiente de Cursos Culinários - Todos os direitos reservados</p>
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Cursos Culinários - Tel (xx) XXXX-XXXX </p>
     </footer>
 
+    <script src="../AC2/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

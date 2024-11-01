@@ -4,40 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Cursos Culinários</title>
+    <link href="../AC2/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="cursos.css">
 </head>
 <body>
 
     <!-- Cabeçalho e Navegação -->
-    <header>
+    <header class="bg-dark text-white text-center py-3">
         <h1>Ambiente de Cursos Culinários</h1>
     </header>
-    <nav>
-        <a href="home.html">Home</a>
-        <a href="todos-cursos.html">Todos os Cursos</a>
-        <a href="login.html">Sair</a>
+    <nav class="bg-secondary text-white text-center py-2">
+        <a href="home.html" class="text-white mx-3">Home</a>
+        <a href="todos-cursos.html" class="text-white mx-3">Todos os Cursos</a>
+        <a href="login.html" class="text-white mx-3">Sair</a>
     </nav>
 
+    <!-- Carrossel de Imagens -->
+    <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+                <img src="../AC2/img/252589-14-curiosidades-da-culinaria-japonesa-que-voce-precisa-conhecer.jpg" class="d-block w-100" alt="Imagem 1">
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+                <img src="../AC2/img/confeitaria-funcionalPrancheta-1-min.jpg" class="d-block w-100" alt="Imagem 2">
+            </div>
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+                <img src="../AC2/img/tipos-de-pao-pelo-mundo-1-.webp" class="d-block w-100" alt="Imagem 3">
+            </div>
+            <!-- Slide 4 -->
+            <div class="carousel-item">
+                <img src="../AC2/img/um-chef-esta-colocando-comida-na-cozinha-de-um-restaurante-usando-uma-colher-para-derramar-um-molho-sobre-um-prato_36682-242697.avif" class="d-block w-100" alt="Imagem 4">
+            </div>
+            <!-- Slide 5 -->
+            <div class="carousel-item">
+                <img src="../AC2/img/calculo-salgado-por-pessoa-1024x445.webp" class="d-block w-100" alt="Imagem 5">
+            </div>
+        </div>
+        <!-- Controles do Carrossel -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+        </button>
+    </div>
+
     <!-- Conteúdo Principal -->
-    <div class="container courses-home">
-        <h2>Principais Cursos</h2>
-        <div class="course">
-            <h3>Curso de Culinária Básica</h3>
-            <p>Aprenda as técnicas básicas da cozinha.</p>
-        </div>
-        <div class="course">
-            <h3>Curso de Panificação</h3>
-            <p>Domine o preparo de pães e massas.</p>
-        </div>
-        <div class="course">
-            <h3>Curso de Doces e Sobremesas</h3>
-            <p>Delicie-se com as melhores receitas de sobremesas.</p>
+    <div class="container my-4">
+        <h2 class="text-center mb-4">Principais Cursos</h2>
+        <div class="row text-center">
+            <!-- Curso 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="../AC2/img/culinaria-e-gastronomia-voce-sabe-a-diferenca-entre-as-duas.webp" class="card-img-top" alt="Imagem do curso de Culinária Básica">
+                    <div class="card-body">
+                        <h5 class="card-title">Curso de Culinária Básica</h5>
+                        <p class="card-text">Aprenda as técnicas básicas da cozinha.</p>
+                        <a href="#" class="btn btn-primary">Ver Curso</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Curso 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="../AC2/img/emulsificantes-na-panificacao-1.jpg" class="card-img-top" alt="Imagem do curso de Panificação">
+                    <div class="card-body">
+                        <h5 class="card-title">Curso de Panificação</h5>
+                        <p class="card-text">Domine o preparo de pães e massas.</p>
+                        <a href="#" class="btn btn-primary">Ver Curso</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Curso 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="../AC2/img/melhores-cursos-de-confeitaria-online-1.webp" class="card-img-top" alt="Imagem do curso de Doces e Sobremesas">
+                    <div class="card-body">
+                        <h5 class="card-title">Curso de Doces e Sobremesas</h5>
+                        <p class="card-text">Delicie-se com as melhores receitas de sobremesas.</p>
+                        <a href="#" class="btn btn-primary">Ver Curso</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-    <footer>
-        <p>&copy; 2024 Ambiente de Cursos Culinários - Todos os direitos reservados</p>
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Cursos Culinários - Tel (xx) XXXX-XXXX </p>
     </footer>
 
+    <!-- Script do Bootstrap 5 -->
+    <script src="../AC2/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
